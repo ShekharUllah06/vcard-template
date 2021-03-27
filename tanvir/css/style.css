@@ -4,60 +4,45 @@
 body {
   margin: 0%;
   padding: 0%;
+  font-family: Helvetica, sans-serif;
 }
-.container {
+.container{
   display: flex;
 }
-.left-menu {
-  position: fixed;
-  width: 10%;
-  border: 1px solid red;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
+.left-menu{
+  flex: 5%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
 }
-.right-menu {
-  position: fixed;
-  width: 90%;
-  border: 1px solid green;
-  top: 0%;
-  bottom: 0%;
-  right: 0%;
+.left-menu div {
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  padding: 32px 0px;
 }
-.left-menu div{
-    height: 94px;
-    border: 1px solid black;
+.left-menu div a{
+  color: #ffffff;
+ 
 }
-.right-menu #me{
-    width: 400px;
-    height:45px ;
-    border: 1px solid red;
+.right-menu{
+  flex: 95%;
+  border:  solid;
+  height: 300px;
 }
-.right-menu #sub-text{
-    width: 550px;
-    height: 60px;
-    border: 1px solid blue;
+.video{
+  opacity: 0.90;
 }
-.right-menu #loop{
-    width: 550px;
-    height: 47px;
-    border: 1px solid black;
-}
-.right-menu #social{
-    width: 550px;
-    height: 47px;
-    border: 1px solid royalblue; 
-}
-.right-menu div{
-    margin-bottom: 20px;
-}
-.right-menu #contant{
-    margin-top: 230px;
-    margin-left: 150px;
-}
-@media screen and (min-width: 600px) {
-    .container {
-      display: flex;
-      flex-direction: column;
-    }
+@media only screen and (max-width: 600px){
+  .container{
+    display: flex;
+    flex-direction: column;
   }
+  .left-menu{
+    flex: 100%;
+    flex-direction: row;
+  }
+  .right-menu{
+    flex: 100%;
+  }
+}
