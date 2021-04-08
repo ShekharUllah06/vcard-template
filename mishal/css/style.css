@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: ;
+}
+.sidenav {
+    width: 0;
+    position: absolute;
+    
+    z-index: 1;
+    
+    top: 0;
+    right: 0;
+    height: 619px;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+  
+    font-size: 36px;
+  
+    float: right;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  .iconmenu{
+    float: right;
+  }
+  #navbar1{
+    height: 90%;
+    width: 90%;
+    background:wheat;
+   
+  }
+  .container{
+    position: relative;
+  }
+  
+  
+  @media screen and (max-height: 700px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+  }
+  #maincontainer{
+    height: 100vh;
+    width: 100%;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #info h2{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  #pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
