@@ -343,6 +343,550 @@ nav ul li a{
 .btn>button:hover{
     background: yellow;
 }
+/* about section end*/
+
+/* resume section start*/
+#resume{
+    overflow: hidden;
+}
+
+.container-resume{
+    display: flex;
+}
+.experience-resume{
+    flex: 50%;
+}
+.education-resume{
+    flex: 50%;
+}
+@media(max-width: 952px){
+    .container-resume{
+        flex-direction: column;
+    }
+    .experience-resume{
+        flex: 100%;
+    }
+    .education-resume{
+        flex: 100%;
+    }
+}
+
+#header-resume>h1{
+    margin: 25px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.left>h2{
+    font-size: 32px;
+    margin: 30px 35px;
+}
+.left>h3{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 30px;
+    color: red;
+}
+.left>p{
+    font-size: 23px;
+    margin-left: 30px;
+    padding-right: 150px;
+    }
+
+
+.right>h2{
+    font-size: 32px;
+    margin: 30px 35px;
+}
+.right>h3{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 30px;
+    color: red;
+}
+.right>p{
+    font-size: 23px;
+    margin-left: 30px;
+    padding-right: 150px;
+    }
+/*header resume end*/
+
+/*skill section start*/
+
+#design-skill{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 65%;
+    
+}
+@media(max-width: 952px){
+    #design-skill{
+        flex-direction: column;
+    }
+    .skills{
+        flex: 100%;
+    }
+    .design-all{
+        flex: 100%;
+    }
+}
+.skills>h1{
+    font-size: 32px;
+   
+}
+.design-all{
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 30px;
+    overflow: hidden;
+    
+}
+.design-all>p{
+    padding: 10px;
+}
+.main-design{
+    height: 23px;
+    background: #F5F6F8;
+    border-radius: 5px;
+   }
+.design-all .inner-design1{
+    background: yellow;
+    width: 90%;
+    height: 23px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+}
+.design-all .inner-design2{
+    background: rgb(255, 47, 193);
+    width: 75%;
+    height: 23px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+}
+.design-all .inner-design3{
+    background: rgb(38, 0, 255);
+    width: 60%;
+    height: 23px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+}
+.design-all .inner-design4{
+    background: rgb(21, 255, 0);
+    width: 65%;
+    height: 23px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+}
+/*design skill end*/
+
+/*coding skill start*/
+#skill-code{
+    display: flex;
+    margin: 30px; 
+}
+#coding-skill h1{
+    margin: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+@media(max-width: 952px) {
+    #skill-code{
+        flex-direction: column;
+    }
+    .box1{
+        flex: 100%;
+    }
+    .box2{
+        flex: 100%;
+    }
+    .box3{
+        flex: 100%;
+    }
+    .box4{
+        flex: 100%;
+    }
+}
+
+
+.box1{
+    position: relative;
+    flex: 25%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F6F8;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+    margin: 10px;
+}
+.box1 .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box1 .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box1 .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.box1 .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.box1 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    stroke: yellow;
+}
+
+
+.box1 .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.box1 .percent .number h2{
+
+    font-size: 30px;
+}
+.box1 .percent .number h2 span{
+    font-size: 24px;
+}
+.box1 .text{
+    padding: 15px 0 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.box2{
+    position: relative;
+    flex: 25%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F6F8;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+    margin: 10px;
+}
+.box2 .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box2 .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box2 .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.box2 .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.box2 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: rgb(243, 16, 175);
+}
+
+
+.box2 .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.box2 .percent .number h2{
+
+    font-size: 30px;
+}
+.box2 .percent .number h2 span{
+    font-size: 24px;
+}
+.box2 .text{
+    padding: 15px 0 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.box3{
+    position: relative;
+    flex: 25%;
+    margin: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F6F8;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+.box3 .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box3 .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box3 .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.box3 .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.box3 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 73) / 100);
+    stroke: rgb(38, 0, 255);
+}
+
+
+.box3 .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.box3 .percent .number h2{
+
+    font-size: 30px;
+}
+.box3 .percent .number h2 span{
+    font-size: 24px;
+}
+.box3 .text{
+    padding: 15px 0 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+.box4{
+    position: relative;
+    flex: 25%;
+    margin: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F5F6F8;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+.box4 .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box4 .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box4 .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.box4 .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.box4 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 67) / 100);
+    stroke:  rgb(21, 255, 0);
+}
+
+
+.box4 .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.box4 .percent .number h2{
+
+    font-size: 30px;
+}
+.box4 .percent .number h2 span{
+    font-size: 24px;
+}
+.box4 .text{
+    padding: 15px 0 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*coding skill end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*skill section end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* resume section end*/
 
 
 
