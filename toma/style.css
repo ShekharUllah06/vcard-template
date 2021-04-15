@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +12,7 @@
     
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Noto Sans KR', sans-serif;
     
 }
 nav{
@@ -238,7 +241,7 @@ nav ul li a{
     position: relative;
     top: 20px;
     display: inline-block;
-    -webkit-animation: bounce 0.3s ease infinite alternate;
+    -webkit-animation: bounce 0.7s ease infinite alternate;
     font-size: 35px;
     font-weight: bold;
     color: red;
@@ -782,130 +785,107 @@ nav ul li a{
     letter-spacing: 1px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*coding skill end*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*skill section end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* resume section end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*knowledge section start*/
+
+.knowledge-part{
+    display: flex;
+    font-size: 25px;
+    line-height: 40px;
+}
+.knowledge-part .knowledge-left> i{
+    color: green;
+}
+
+.knowledge-part .knowledge-right> i{
+    color: green;
+}
+.knowledge-left{
+    flex: 50%;
+}
+.knowledge-right{
+    flex: 50%;
+}
+
+#knowledge-section{
+    margin: 30px;
+}
+#knowledge-section #kn-h1>h1{
+        font-size: 32px;
+        margin-bottom: 25px;
+}
+
+@media (max-width: 952px){
+    .knowledge-part{
+        flex-direction: column;
+    }
+    .knowledge-left{
+        flex: 100%;
+    }
+    .knowledge-right{
+        flex: 100%;
+    }
+
+}
+/*knowledge section end*/
+
+/*interest section start*/
+
+#interest-section{
+    margin: 30px;
+}
+#hdr-1>h1{
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.interest-part{
+    display: flex;
+}
+.interest-left{
+     flex: 50%;
+     border: 1px solid;
+     margin-right: 100px;
+     padding: 40px;
+     margin-bottom: 20px;
+     height: 200px;
+     text-align: center;
+     
+}
+.interest-right{
+    flex: 50%;
+    border: 1px solid;
+    margin-bottom: 20px;
+    margin-right: 100px;
+     padding: 40px;
+     height: 200px;
+     text-align: center;
+     
+
+}
+
+@media(max-width: 952px){
+    .interest-part{
+        flex-direction: column;
+    }
+    .interest-left{
+        flex: 100%;
+   }
+   .interest-right{
+       flex: 100%;
+   }
+}
+
+
+
+
+
+/*interest section end*/
+
+
+
+
+
+ 
