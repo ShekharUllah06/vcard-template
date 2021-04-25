@@ -7,6 +7,7 @@
     <title>vCard Template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="vando/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="Fullscreen nav-bar.css">
 </head>
 <body>
   <div class="bg">
@@ -17,22 +18,36 @@
         
       </div>
       <div class="menu" id="myTopnav">
-        <ul>
-          <li><a href="#ex" id="about">About</a></li>
-          <li><a href="#services-main" id="services">Services</a></li>
-          <li><a href="#" id="contact"><i class="fas fa-user-check"></i></a></li>
-          <li class="Humberger"><a href="portfolio.html" class="icon" onclick="myFunction()">
-            <i class="fas fa-align-justify"></i>
-          </a></li> 
-         
-        </ul>
+        <div class="overlay-navigation">
+          <nav role="navigation">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="topnav">
+        <section class="home">
+        
+          <div class="open-overlay">
+            <span class="bar-top"></span>
+            <span class="bar-middle"></span>
+            <span class="bar-bottom"></span>
+          </div>
+        </section>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+        </script><script  src="Fullscreen nav-bar.js"></script>
         
       </div>
-     
+      
     </header>
     
          <div class="pro-img">
-             <img src="image/myphoto-removebg-preview.png" class="myImage" alt="">
+             <img src="image/man-removebg-preview.png" class="myImage" alt="">
         </div>
       
       <div class="text">
@@ -43,39 +58,7 @@
       </div>
     </div>
     </div>    
-   <div id="ex">
-    About page
-    <pre>
-      My name is Mohammad Ali Siddique.I am a <i>Webdeveloper & Designer</i>
-      I like to make website that is realy interesting for me.
-      Also,
-      I like to do database related work.Because,I like data management.
-    </pre>
-    <pre>
-      My name is Mohammad Ali Siddique.I am a <i>Webdeveloper & Designer</i>
-      I like to make website that is realy interesting for me.
-      Also,
-      I like to do database related work.Because,I like data management.
-    </pre>
-    <pre>
-      My name is Mohammad Ali Siddique.I am a <i>Webdeveloper & Designer</i>
-      I like to make website that is realy interesting for me.
-      Also,
-      I like to do database related work.Because,I like data management.
-    </pre>
-   </div>
-  
-   <section>
-     <div id="ser-row">
-      <div class="ser-colume">
-        Hello web site
-      </div>
-      <div class="ser-colume">
-        Hello web site services
-      </div>
-     </div>
-   </section>
-
+   
 
    
 </body>

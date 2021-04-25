@@ -30,7 +30,7 @@ body, html {
 
 .top-nav{
   position:relative;
-  left:63%;
+  left:75%;
   top:0;
   
   
@@ -128,7 +128,7 @@ border-bottom: 2px rgba(54, 231, 38, 0.945) solid;
   align-items: center;
   justify-content: center;
 
-top:40%;
+top:36%;
 left:45%;
 }
 .myImage:hover{
@@ -158,42 +158,10 @@ left:45%;
 
 
 /*Here is about page*/
-#ex{
-  width:100%;
-  height:100%;
-  background-color:black;
- 
-  color:#F7F7F7;
-  text-align:center;
-  font-family:'Times New Roman', Times, serif;
-  font-size:xx-large;
-}
+
 /*Here is services page*/
 
-.ser-text{
-  display: flex;
-}
-#ser-row{
-  display: flex;
-  padding: 10px;
-  background-color: gray;
-}
-.ser-colume{
-  background-color: white;
-  flex: 50%;
-  margin: 10px;
 
-}
-
-/*responsive site*/
-@media (max-width:700px){
-  #ser-row{
-    flex-direction: column;
-  }
-  .ser-colume{
-    flex: 100%;
-  }
-}
 
 
 
