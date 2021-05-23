@@ -1,0 +1,119 @@
+@import 'until.css';
+:root{
+    --paimary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+body{
+    font-family: 'poppin', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: var(--dark);
+    
+}
+.container{
+    
+    padding:  15px;
+    margin: 0 auto ;
+}
+
+.navbara ul li {
+   
+    position: relative;
+    display: inline-block;
+
+}
+.navbara ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(255, 1, 1);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbara ul li:hover ::after {
+    width: 80%;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a :active{
+    color: rgb(4, 250, 4);
+}
+header nav {
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+header nav .left a:hover{
+    color: var(--paimary);
+}
+
+.bttn-primary{
+    background: var(--paimary);
+ color: var(--secondary);
+    text-transform: uppercase;
+    border-radius: 30px;
+    
+    
+}
+.margin_riggt{
+    margin-right: 5%;
+}
+.bttn-primary:hover{
+    background: transparent;
+    border:var(--paimary) ;
+    color: var(--paimary);
+}
+.hero .left img{
+    width: 330px;
+object-fit: cover;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--paimary);
+    margin-bottom: 0.8rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+}
+.hero .right h1 span{
+    color: var(--paimary);
+}
+.hero .right p{
+    line-height: 30px;
+}
+.seconddiv{
+margin-left: 10%;
+}
+.firstdiv{
+    margin-left: 5%;
+}
+
+.second_btn{
+    line-height: 6rem;
+}
+.conseft{
+    margin-left: 5%;
+}
